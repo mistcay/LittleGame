@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>＊數字小遊戲＊</title>
+<meta charset="UTF-8">
+</head>
+<font face="微軟正黑體">
+
+<style>
+body{background-color:#E8CCFF}
+input{width:120px;height:40px;border:2px #9999FF dashed;}
+#top {width:100%; height:100px; float: left; text-align: left;}
+#left {float: left; width:15%; text-align: left;}
+#center {float: left;}
+#right {float: right; width: 17%; text-align: left;}
+</style>
+
+<script type="text/javascript">
+var total=0;
+var pt1=20;
+var pt2=20;
+var pt3=20;
+var pt4=20;
+var pt5=20;
+var ans1=21;
+var ans2=111;
+var ans3=502;
+var ans4=1682;
+var ans5=92;
+
+function q1(){
+if(document.getElementById("number1").value == ans1 && total != 100){total=total+pt1; pt1=0; ans1=9999; alert("The points: " + total);}
+else if (document.getElementById("number1").value == 21 && total==100){alert("Congratulation! You get all points!");}
+else if (document.getElementById("number1").value != 21){alert("Wrong!")}
+else {alert("You had gotten the points!")}
+}
+function q2(){
+if(document.getElementById("number2").value == ans2 && total != 100){total=total+pt2; pt2=0; ans2=9999; alert("The points: " + total);}
+else if (document.getElementById("number2").value == 111 && total==100){alert("Congratulation! You get all points!");}
+else if (document.getElementById("number2").value != 111){alert("Wrong!")}
+else {alert("You had gotten the points!")}
+}
+function q3(){
+if(document.getElementById("number3").value == ans3 && total != 100){total=total+pt3; pt3=0; ans3=0; alert("The points: " + total);}
+else if (document.getElementById("number3").value == 502 && total==100){alert("Congratulation! You get all points!");}
+else if (document.getElementById("number3").value != 502){alert("Wrong!")}
+else {alert("You had gotten the points!")}
+}
+function q4(){
+if(document.getElementById("number4").value == ans4 && total != 100){total=total+pt4; pt4=0; ans4=0; alert("The points: " + total);}
+else if (document.getElementById("number4").value == 1682 && total==100){alert("Congratulation! You get all points!");}
+else if (document.getElementById("number4").value != 1682){alert("Wrong!")}
+else {alert("You had gotten the points!")}
+}
+function q5(){
+if(document.getElementById("number5").value == ans5 && total != 100){total=total+pt5; pt5=0; ans5=0; alert("The points: " + total);}
+else if (document.getElementById("number5").value == 92 && total==100){alert("Congratulation! You get all points!");}
+else if (document.getElementById("number5").value != 92){alert("Wrong!")}
+else {alert("You had gotten the points!")}
+}
+
+function show1(){
+    document.getElementById("center content").
+    innerHTML='<h1>1 , 1 , 2 , 3 , 5 , 8 , 13 , ?</h1><h2>What is the number?</h2><p><input type="text" id="number1" style="width:250px; height:25px; border:2px"></p><button type="button" onclick="q1()" style="width:100px; height:30px; background: transparent; border:4px #5500FF double;">Guess!</button>';}
+function show2(){
+    document.getElementById("center content").
+    innerHTML='<h1> 1 , 1 = 20</h1><h1> 2 , 2 = 40</h1><h1> 3 , 3 = 60</h1><h1> 4 , 4 = 80</h1><h1> 5 , 6 = ?</h1><h2>What is the number?</h2><p><input type="text" id="number2" style="width:250px; height:25px; border:2px"></p><button type="button" onclick="q2()" style="width:100px; height:30px; background: transparent; border:4px #5500FF double;">Guess!</button>';}
+function show3(){
+    document.getElementById("center content").
+    innerHTML='<h1> 1 , 2 = 22</h1><h1> 2 , 4 = 82</h1><h1> 3 , 6 = 182</h1><h1> 4 , 8 = 322</h1><h1> 5 , 10 = ?</h1><h2>What is the number?</h2><p><input type="text" id="number3" style="width:250px; height:25px; border:2px"></p><button type="button" onclick="q3()" style="width:100px; height:30px; background: transparent; border:4px #5500FF double;">Guess!</button>';}
+function show4(){
+    document.getElementById("center content").
+    innerHTML='<h1> 2 , 114 , 7</h1><h1> 3 , 124 , 8</h1><h1> 10 , 530 , 15</h1><h1> 12 , 448 , 16</h1><h1> 22 , ? , 31</h1><h2>What is the number?</h2><p><input type="text" id="number4" style="width:250px; height:25px; border:2px"></p><button type="button" onclick="q4()" style="width:100px; height:30px; background: transparent; border:4px #5500FF double;">Guess!</button>';}
+function show5(){
+    document.getElementById("center content").
+    innerHTML='<h1> ? , 16 , 06 , 68 , 88  </h1><h2>What is the number?</h2><p><input type="text" id="number5" style="width:250px; height:25px; border:2px"></p><button type="button" onclick="q5()" style="width:100px; height:30px; background: transparent; border:4px #5500FF double;">Guess!</button>';}
+</script>
+
+<body>
+<div id="top">
+<h1 style="text-align:center">
+<font color="#0066FF" size="7">數字小遊戲</font>
+</h1>
+</div>
+<div style="padding:50px;" id="left">
+<h1><input type="button" value="Question1" onclick="show1()"></h1>
+<h1><input type="button" value="Question2" onclick="show2()"></h1>
+<h1><input type="button" value="Question3" onclick="show3()"></h1>
+<h1><input type="button" value="Question4" onclick="show4()"></h1>
+<h1><input type="button" value="Question5" onclick="show5()"></h1>
+</div>
+
+<div id="center">
+<span id="center content">
+<h1>Welcome !</h1>
+<p>Click the questions and get the points!</p>
+</span></div>
+
+<div id="right">
+<p><img src="01.png" height="180"/></p>
+<h4 style="text-shadow: 3px 3px 5px #77DDFF;">&nbsp&nbsp鬼鬼&nbsp&nbsp <a href="https://www.facebook.com/mistcay" target="_blank">Facebook</a></h4>
+<p><address><a href="mailto:mistcay@gmail.com">
+<font color="#7744FF">
+&nbspmistcay@gmail.com</a>
+</address></p>
+<h3 style="text-shadow: 3px 3px 5px #FF44AA;"><font color="#000000">&nbsp&nbsp唯一嫁艦：大鳳</h3></font>
+<p><img src="id=69750635.jpg" height="240"/></p>
+</div>
+
+</body>
+</html>
