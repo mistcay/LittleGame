@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>＊遊戲說明＊</title>
+<font face="微軟正黑體">
+<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-
+FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+
+<script>
+$(document).ready(function(){
+$("#btn1").click(function(){
+$("#btn1,#btn3").toggleClass("y");
+$("#a1,#a3").toggle();
+});
+$("#btn2").click(function(){
+$("#btn2,#btn3").toggleClass("y");
+$("#a2,#a3").toggle();
+});
+$("#btn3").click(function(){
+$("#btn1,#btn2,#btn3,#btn4,#btn5").toggleClass("y");
+$("#a1,#a2,#a3,#a4,#a5").toggle();
+});
+$("#btn4").click(function(){
+$("#btn3,#btn4").toggleClass("y");
+$("#a3,#a4").toggle();
+});
+$("#btn5").click(function(){
+$("#btn3,#btn5").toggleClass("y");
+$("#a3,#a5").toggle();
+});
+});
+</script>
+</head>
+
+<style>
+body{background-color: #FFDD55;}
+.y{background-color: #0066FF;}
+button{width: 50px; height: 50px; border: transparent; background: #00AA00;}
+#link{text-decoration: none; color: #7700FF;}
+</style>
+
+<body>
+<div align="center">
+<h1>歡迎 ! 閒的發慌嗎 ? 來玩個小遊戲吧 !</h1>
+<h1>建議視窗最大化遊玩，避免位置不對而解不出來唷 !</h1>
+<h1>遊玩方式非常簡單，點擊方塊使方塊變色，</h1>
+<h1>使所有方塊都變成藍色，題目就會完整呈現，</h1>
+<h1>再將題目中的問號解出來，進而得到分數，</h1>
+<h1>努力獲得滿分吧 !!!</h1>
+<h1>注意：問號的值為1到2000，超過就代表解錯囉 !</h1>
+<h1>遊玩網址: <a id="link" href="http://mistcay.github.io/Little/ComeToPlay" target="_blank">mistcay.github.io/Little/ComeToPlay</a></h1>
+<h1>下面為試用方塊</h1>
+<h1>
+<a id="a1">試</a>
+<a id="a2">著</a>
+<a id="a3">隱</a>
+<a id="a4">藏</a>
+<a id="a5">我</a>
+</h1>
+<p><button id="btn1">Click</button></p>
+<p><button id="btn2">Click</button>
+<button id="btn3">Click</button>
+<button id="btn4">Click</button></p>
+<p><button id="btn5">Click</button></p>
+
+</div>
+
+</body>
+</html>

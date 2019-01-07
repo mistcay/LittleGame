@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>＊解謎小遊戲＊</title>
+<font face="微軟正黑體">
+<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-
+FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+
+<script>
+var answer1=111;
+var answer2=92;
+var answer3=1682;
+
+$(document).ready(function(){
+
+$("#btn111").click(function(){
+$("#btn111,#btn112,#btn121").toggleClass("y");
+$("#a111,#a112,#a121").toggle();
+});
+$("#btn112").click(function(){
+$("#btn111,#btn112,#btn113,#btn122").toggleClass("y");
+$("#a111,#a112,#a113,#a122").toggle();
+});
+$("#btn113").click(function(){
+$("#btn112,#btn113,#btn114,#btn123").toggleClass("y");
+$("#a112,#a113,#a114,#a123").toggle();
+});
+$("#btn114").click(function(){
+$("#btn113,#btn114,#btn124").toggleClass("y");
+$("#a113,#a114,#a124").toggle();
+});
+$("#btn121").click(function(){
+$("#btn111,#btn121,#btn122,#btn131").toggleClass("y");
+$("#a111,#a121,#a122,#a131").toggle();
+});
+$("#btn122").click(function(){
+$("#btn112,#btn121,#btn122,#btn123,#btn132").toggleClass("y");
+$("#a112,#a121,#a122,#a123,#a132").toggle();
+});
+$("#btn123").click(function(){
+$("#btn113,#btn122,#btn123,#btn124,#btn133").toggleClass("y");
+$("#a113,#a122,#a123,#a124,#a133").toggle();
+});
+$("#btn124").click(function(){
+$("#btn114,#btn123,#btn124,#btn134").toggleClass("y");
+$("#a114,#a123,#a124,#a134").toggle();
+});
+$("#btn131").click(function(){
+$("#btn121,#btn131,#btn132,#btn141").toggleClass("y");
+$("#a121,#a131,#a132,#a141").toggle();
+});
+$("#btn132").click(function(){
+$("#btn122,#btn131,#btn132,#btn133,#btn142").toggleClass("y");
+$("#a122,#a131,#a132,#a133,#a142").toggle();
+});
+$("#btn133").click(function(){
+$("#btn123,#btn132,#btn133,#btn134,#btn143").toggleClass("y");
+$("#a123,#a132,#a133,#a134,#a143").toggle();
+});
+$("#btn134").click(function(){
+$("#btn124,#btn133,#btn134,#btn144").toggleClass("y");
+$("#a124,#a133,#a134,#a144").toggle();
+});
+$("#btn141").click(function(){
+$("#btn131,#btn141,#btn142").toggleClass("y");
+$("#a131,#a141,#a142").toggle();
+});
+$("#btn142").click(function(){
+$("#btn132,#btn141,#btn142,#btn143").toggleClass("y");
+$("#a132,#a141,#a142,#a143").toggle();
+});
+$("#btn143").click(function(){
+$("#btn133,#btn142,#btn143,#btn144").toggleClass("y");
+$("#a133,#a142,#a143,#a144").toggle();
+});
+$("#btn144").click(function(){
+$("#btn134,#btn143,#btn144").toggleClass("y");
+$("#a134,#a143,#a144").toggle();
+});
+$("#btn211").click(function(){
+$("#btn211,#btn212,#btn221").toggleClass("y");
+$("#a211,#a212,#a221").toggle();
+});
+$("#btn212").click(function(){
+$("#btn211,#btn212,#btn213,#btn222").toggleClass("y");
+$("#a211,#a212,#a213,#a222").toggle();
+});
+$("#btn213").click(function(){
+$("#btn212,#btn213,#btn214,#btn223").toggleClass("y");
+$("#a212,#a213,#a214,#a223").toggle();
+});
+$("#btn214").click(function(){
+$("#btn213,#btn214,#btn215,#btn224").toggleClass("y");
+$("#a213,#a214,#a215,#a224").toggle();
+});
+$("#btn215").click(function(){
+$("#btn214,#btn215,#btn216,#btn225").toggleClass("y");
+$("#a214,#a215,#a216,#a225").toggle();
+});
+$("#btn216").click(function(){
+$("#btn215,#btn216,#btn226").toggleClass("y");
+$("#a215,#a216,#a226").toggle();
+});
+$("#btn221").click(function(){
+$("#btn211,#btn221,#btn222,#btn231").toggleClass("y");
+$("#a211,#a221,#a222,#a231").toggle();
+});
+$("#btn222").click(function(){
+$("#btn212,#btn221,#btn222,#btn223,#btn232").toggleClass("y");
+$("#a212,#a221,#a222,#a223,#a232").toggle();
+});
+$("#btn223").click(function(){
+$("#btn213,#btn222,#btn223,#btn224").toggleClass("y");
+$("#a213,#a222,#a223,#a224").toggle();
+});
+$("#btn224").click(function(){
+$("#btn214,#btn223,#btn224,#btn225,#btn234").toggleClass("y");
+$("#a214,#a223,#a224,#a225,#a234").toggle();
+});
+$("#btn225").click(function(){
+$("#btn215,#btn224,#btn225,#btn226,#btn235").toggleClass("y");
+$("#a215,#a224,#a225,#a226,#a235").toggle();
+});
+$("#btn226").click(function(){
+$("#btn216,#btn225,#btn226").toggleClass("y");
+$("#a216,#a225,#a226").toggle();
+});
+$("#btn231").click(function(){
+$("#btn221,#btn231,#btn232,#btn241").toggleClass("y");
+$("#a221,#a231,#a232,#a241").toggle();
+});
+$("#btn232").click(function(){
+$("#btn222,#btn231,#btn232,#btn242").toggleClass("y");
+$("#a222,#a231,#a232,#a242").toggle();
+});
+$("#btn234").click(function(){
+$("#btn224,#btn234,#btn235,#btn244").toggleClass("y");
+$("#a224,#a234,#a235,#a244").toggle();
+});
+$("#btn235").click(function(){
+$("#btn225,#btn234,#btn235,#btn245").toggleClass("y");
+$("#a225,#a234,#a235,#a245").toggle();
+});
+$("#btn241").click(function(){
+$("#btn231,#btn241,#btn242,#btn251").toggleClass("y");
+$("#a231,#a241,#a242,#a251").toggle();
+});
+$("#btn242").click(function(){
+$("#btn232,#btn241,#btn242,#btn252").toggleClass("y");
+$("#a232,#a241,#a242,#a252").toggle();
+});
+$("#btn244").click(function(){
+$("#btn234,#btn244,#btn245,#btn254").toggleClass("y");
+$("#a234,#a244,#a245,#a254").toggle();
+});
+$("#btn245").click(function(){
+$("#btn235,#btn244,#btn245,#btn246,#btn255").toggleClass("y");
+$("#a235,#a244,#a245,#a246,#a255").toggle();
+});
+$("#btn251").click(function(){
+$("#btn241,#btn251,#btn252").toggleClass("y");
+$("#a241,#a251,#a252").toggle();
+});
+$("#btn252").click(function(){
+$("#btn242,#btn251,#btn252,#btn253").toggleClass("y");
+$("#a242,#a251,#a252,#a253").toggle();
+});
+$("#btn253").click(function(){
+$("#btn252,#btn253,#btn254").toggleClass("y");
+$("#a252,#a253,#a254").toggle();
+});
+$("#btn254").click(function(){
+$("#btn244,#btn253,#btn254,#btn255").toggleClass("y");
+$("#a244,#a253,#a254,#a255").toggle();
+});
+$("#btn255").click(function(){
+$("#btn245,#btn254,#btn255,#btn256").toggleClass("y");
+$("#a245,#a254,#a255,#a256").toggle();
+});
+$("#btn256").click(function(){
+$("#btn255,#btn256").toggleClass("y");
+$("#a255,#a256").toggle();
+});
+$("#btn311").click(function(){
+$("#btn311,#btn312,#btn321").toggleClass("y");
+$("#a311,#a312,#a321").toggle();
+});
+$("#btn312").click(function(){
+$("#btn311,#btn312,#btn313").toggleClass("y");
+$("#a311,#a312,#a313").toggle();
+});
+$("#btn313").click(function(){
+$("#btn312,#btn313,#btn314,#btn323").toggleClass("y");
+$("#a312,#a313,#a314,#a323").toggle();
+});
+$("#btn314").click(function(){
+$("#btn313,#btn314,#btn315,#btn324").toggleClass("y");
+$("#a313,#a314,#a315,#a324").toggle();
+});
+$("#btn315").click(function(){
+$("#btn314,#btn315,#btn316").toggleClass("y");
+$("#a314,#a315,#a316").toggle();
+});
+$("#btn316").click(function(){
+$("#btn315,#btn316,#btn317,#btn326").toggleClass("y");
+$("#a315,#a316,#a317,#a326").toggle();
+});
+$("#btn317").click(function(){
+$("#btn316,#btn317,#btn318,#btn327").toggleClass("y");
+$("#a316,#a317,#a318,#a327").toggle();
+});
+$("#btn318").click(function(){
+$("#btn317,#btn318,#btn319,#btn328").toggleClass("y");
+$("#a317,#a318,#a319,#a328").toggle();
+});
+$("#btn319").click(function(){
+$("#btn318,#btn319,#btn329").toggleClass("y");
+$("#a318,#a319,#a329").toggle();
+});
+$("#btn321").click(function(){
+$("#btn311,#btn321,#btn331").toggleClass("y");
+$("#a311,#a321,#a331").toggle();
+});
+$("#btn323").click(function(){
+$("#btn313,#btn323,#btn324,#btn333").toggleClass("y");
+$("#a313,#a323,#a324,#a333").toggle();
+});
+$("#btn324").click(function(){
+$("#btn314,#btn323,#btn324,#btn334").toggleClass("y");
+$("#a314,#a323,#a324,#a334").toggle();
+});
+$("#btn326").click(function(){
+$("#btn316,#btn326,#btn327,#btn336").toggleClass("y");
+$("#a316,#a326,#a327,#a336").toggle();
+});
+$("#btn327").click(function(){
+$("#btn317,#btn326,#btn327,#btn328,#btn337").toggleClass("y");
+$("#a317,#a326,#a327,#a328,#a337").toggle();
+});
+$("#btn328").click(function(){
+$("#btn318,#btn327,#btn328,#btn329,#btn338").toggleClass("y");
+$("#a318,#a327,#a328,#a329,#a338").toggle();
+});
+$("#btn329").click(function(){
+$("#btn319,#btn328,#btn329,#btn339").toggleClass("y");
+$("#a319,#a328,#a329,#a339").toggle();
+});
+$("#btn331").click(function(){
+$("#btn321,#btn331,#btn332,#btn341").toggleClass("y");
+$("#a321,#a331,#a332,#a341").toggle();
+});
+$("#btn332").click(function(){
+$("#btn331,#btn332,#btn333,#btn342").toggleClass("y");
+$("#a331,#a332,#a333,#a342").toggle();
+});
+$("#btn333").click(function(){
+$("#btn323,#btn332,#btn333,#btn334,#btn343").toggleClass("y");
+$("#a323,#a332,#a333,#a334,#a343").toggle();
+});
+$("#btn334").click(function(){
+$("#btn324,#btn333,#btn334,#btn335,#btn344").toggleClass("y");
+$("#a324,#a333,#a334,#a335,#a344").toggle();
+});
+$("#btn335").click(function(){
+$("#btn334,#btn335,#btn336,#btn345").toggleClass("y");
+$("#a334,#a335,#a336,#a345").toggle();
+});
+$("#btn336").click(function(){
+$("#btn326,#btn335,#btn336,#btn337,#btn346").toggleClass("y");
+$("#a326,#a335,#a336,#a337,#a346").toggle();
+});
+$("#btn337").click(function(){
+$("#btn327,#btn336,#btn337,#btn338").toggleClass("y");
+$("#a327,#a336,#a337,#a338").toggle();
+});
+$("#btn338").click(function(){
+$("#btn328,#btn337,#btn338,#btn339,#btn348").toggleClass("y");
+$("#a328,#a337,#a338,#a339,#a348").toggle();
+});
+$("#btn339").click(function(){
+$("#btn329,#btn338,#btn339,#btn349").toggleClass("y");
+$("#a329,#a338,#a339,#a349").toggle();
+});
+$("#btn341").click(function(){
+$("#btn331,#btn341,#btn342,#btn351").toggleClass("y");
+$("#a331,#a341,#a342,#a351").toggle();
+});
+$("#btn342").click(function(){
+$("#btn332,#btn341,#btn342,#btn343,#btn352").toggleClass("y");
+$("#a332,#a341,#a342,#a343,#a352").toggle();
+});
+$("#btn343").click(function(){
+$("#btn333,#btn342,#btn343,#btn344,#btn353").toggleClass("y");
+$("#a333,#a342,#a343,#a344,#a353").toggle();
+});
+$("#btn344").click(function(){
+$("#btn334,#btn343,#btn344,#btn345,#btn354").toggleClass("y");
+$("#a334,#a343,#a344,#a345,#a354").toggle();
+});
+$("#btn345").click(function(){
+$("#btn335,#btn344,#btn345,#btn346,#btn355").toggleClass("y");
+$("#a335,#a344,#a345,#a346,#a355").toggle();
+});
+$("#btn346").click(function(){
+$("#btn336,#btn345,#btn346,#btn356").toggleClass("y");
+$("#a336,#a345,#a346,#a356").toggle();
+});
+$("#btn348").click(function(){
+$("#btn338,#btn348,#btn349,#btn358").toggleClass("y");
+$("#a338,#a348,#a349,#a358").toggle();
+});
+$("#btn349").click(function(){
+$("#btn339,#btn348,#btn349,#btn359").toggleClass("y");
+$("#a339,#a348,#a349,#a359").toggle();
+});
+$("#btn351").click(function(){
+$("#btn341,#btn351,#btn352,#btn361").toggleClass("y");
+$("#a341,#a351,#a352,#a361").toggle();
+});
+$("#btn352").click(function(){
+$("#btn342,#btn351,#btn352,#btn353,#btn362").toggleClass("y");
+$("#a342,#a351,#a352,#a353,#a362").toggle();
+});
+$("#btn353").click(function(){
+$("#btn343,#btn352,#btn353,#btn354,#btn363").toggleClass("y");
+$("#a343,#a352,#a353,#a354,#a363").toggle();
+});
+$("#btn354").click(function(){
+$("#btn344,#btn353,#btn354,#btn355,#btn364").toggleClass("y");
+$("#a344,#a353,#a354,#a355,#a364").toggle();
+});
+$("#btn355").click(function(){
+$("#btn345,#btn354,#btn355,#btn356,#btn365").toggleClass("y");
+$("#a345,#a354,#a355,#a356,#a365").toggle();
+});
+$("#btn356").click(function(){
+$("#btn346,#btn355,#btn356,#btn357,#btn366").toggleClass("y");
+$("#a346,#a355,#a356,#a357,#a366").toggle();
+});
+$("#btn357").click(function(){
+$("#btn356,#btn357,#btn358,#btn367").toggleClass("y");
+$("#a356,#a357,#a358,#a367").toggle();
+});
+$("#btn358").click(function(){
+$("#btn348,#btn357,#btn358,#btn359,#btn368").toggleClass("y");
+$("#a348,#a357,#a358,#a359,#a368").toggle();
+});
+$("#btn359").click(function(){
+$("#btn349,#btn358,#btn359,#btn369").toggleClass("y");
+$("#a349,#a358,#a359,#a369").toggle();
+});
+$("#btn361").click(function(){
+$("#btn351,#btn361,#btn362").toggleClass("y");
+$("#a351,#a361,#a362").toggle();
+});
+$("#btn362").click(function(){
+$("#btn352,#btn361,#btn362,#btn363,#btn372").toggleClass("y");
+$("#a352,#a361,#a362,#a363,#a372").toggle();
+});
+$("#btn363").click(function(){
+$("#btn353,#btn362,#btn363,#btn364,#btn373").toggleClass("y");
+$("#a353,#a362,#a363,#a364,#a373").toggle();
+});
+$("#btn364").click(function(){
+$("#btn354,#btn363,#btn364,#btn365,#btn374").toggleClass("y");
+$("#a354,#a363,#a364,#a365,#a374").toggle();
+});
+$("#btn365").click(function(){
+$("#btn355,#btn364,#btn365,#btn366").toggleClass("y");
+$("#a355,#a364,#a365,#a366").toggle();
+});
+$("#btn366").click(function(){
+$("#btn356,#btn365,#btn366,#btn367,#btn376").toggleClass("y");
+$("#a356,#a365,#a366,#a367,#a376").toggle();
+});
+$("#btn367").click(function(){
+$("#btn357,#btn366,#btn367,#btn368,#btn377").toggleClass("y");
+$("#a357,#a366,#a367,#a368,#a377").toggle();
+});
+$("#btn368").click(function(){
+$("#btn358,#btn367,#btn368,#btn369,#btn378").toggleClass("y");
+$("#a358,#a367,#a368,#a369,#a378").toggle();
+});
+$("#btn369").click(function(){
+$("#btn359,#btn368,#btn369,#btn379").toggleClass("y");
+$("#a359,#a368,#a369,#a379").toggle();
+});
+$("#btn372").click(function(){
+$("#btn362,#btn372,#btn373").toggleClass("y");
+$("#a362,#a372,#a373").toggle();
+});
+$("#btn373").click(function(){
+$("#btn363,#btn372,#btn373,#btn374").toggleClass("y");
+$("#a363,#a372,#a373,#a374").toggle();
+});
+$("#btn374").click(function(){
+$("#btn364,#btn373,#btn374").toggleClass("y");
+$("#a364,#a373,#a374").toggle();
+});
+$("#btn376").click(function(){
+$("#btn366,#btn376,#btn377").toggleClass("y");
+$("#a366,#a376,#a377").toggle();
+});
+$("#btn377").click(function(){
+$("#btn367,#btn376,#btn377,#btn378").toggleClass("y");
+$("#a367,#a376,#a377,#a378").toggle();
+});
+$("#btn378").click(function(){
+$("#btn368,#btn377,#btn378,#btn379").toggleClass("y");
+$("#a368,#a377,#a378,#a379").toggle();
+});
+$("#btn379").click(function(){
+$("#btn369,#btn378,#btn379").toggleClass("y");
+$("#a369,#a378,#a379").toggle();
+});
+});
+function grade(){
+if(document.getElementById("ans1").value == answer1 &&document.getElementById("ans2").value == answer2 &&document.getElementById("ans3").value == answer3){alert("恭喜你獲得了100分 ! 太厲害了吧 !");}
+else if (document.getElementById("ans1").value == answer1 &&document.getElementById("ans2").value == answer2 &&document.getElementById("ans3").value != answer3){alert("獲得了60分 ! 可惜了 ! 再多加油一定能破解最後一題的 !");}
+else if (document.getElementById("ans1").value == answer1 &&document.getElementById("ans2").value != answer2 &&document.getElementById("ans3").value != answer3){alert("只獲得了25分 ! 請再接再厲 !");}
+else if (document.getElementById("ans1").value != answer1 &&document.getElementById("ans2").value == answer2 &&document.getElementById("ans3").value != answer3){alert("獲得了35分 ! 第一題很簡單的 ! 再多想想吧 !");}
+else if (document.getElementById("ans1").value != answer1 &&document.getElementById("ans2").value != answer2 &&document.getElementById("ans3").value == answer3){alert("獲得了40分 ! 我想你只是懶得解前兩題了吧 !");}
+else if (document.getElementById("ans1").value != answer1 &&document.getElementById("ans2").value == answer2 &&document.getElementById("ans3").value == answer3){alert("獲得了75分 ! 其實你會第一題的 ! 對吧 ?");}
+else if (document.getElementById("ans1").value == answer1 &&document.getElementById("ans2").value != answer2 &&document.getElementById("ans3").value == answer3){alert("獲得了65分 ! 第三題都對了 ! 第二題一定也沒問題的 !");}
+else {alert("0分 ... 哇 ... 請再接再厲吧 ...");}
+}
+</script>
+</head>
+
+<style>
+body{background-color: #FFDD55;}
+p{font-size:20px;}
+.y{background-color: #0066FF;}
+#photo{position:fixed; left:50px; top:25%; background: transparent;}
+button{width: 50px; height: 50px; border: transparent; background: #00AA00;}
+#btn233{border: transparent; background-color: #FFDD55;}
+#btn236{border: transparent; background-color: #FFDD55;}
+#btn243{border: transparent; background-color: #FFDD55;}
+#btn246{border: transparent; background-color: #FFDD55;}
+#btn322{border: transparent; background-color: #FFDD55;}
+#btn325{border: transparent; background-color: #FFDD55;}
+#btn347{border: transparent; background-color: #FFDD55;}
+#btn371{border: transparent; background-color: #FFDD55;}
+#btn375{border: transparent; background-color: #FFDD55;}
+</style>
+
+<body>
+<div id="photo">
+<img src="photo1.png" height="300"/>
+</div>
+<div align="center">
+<br><br>
+<p>
+<button id="btn111"></button>
+<button id="btn112"></button>
+<button id="btn113"></button>
+<button id="btn114"></button>
+</p><p>
+<button id="btn121"></button>
+<button id="btn122"></button>
+<button id="btn123"></button>
+<button id="btn124"></button>
+</p><p>
+<button id="btn131"></button>
+<button id="btn132"></button>
+<button id="btn133"></button>
+<button id="btn134"></button>
+</p><p>
+<button id="btn141"></button>
+<button id="btn142"></button>
+<button id="btn143"></button>
+<button id="btn144"></button>
+</p>
+<br>
+<p><a id="a121">2</a>1<a id="a133">7</a> , <a id="a132">5</a><a id="a141">8</a>1 = <a id="a144">1</a><a id="a111">1</a>2<a id="a122">1</a>0</p>
+<p><a id="a123">1</a><a id="a132">3</a>2<a id="a114">1</a> , <a id="a122">6</a>2<a id="a142">7</a> = <a id="a144">1</a>4<a id="a112">4</a>0</p>
+<p>3<a id="a134">8</a><a id="a112">3</a> , <a id="a124">1</a><a id="a133">1</a>3<a id="a142">2</a><a id="a131">2</a><a id="a114">3</a> = <a id="a134">6</a>60<a id="a111">5</a><a id="a143">6</a></p>
+<p><a id="a124">3</a>4<a id="a121">7</a><a id="a141">1</a><a id="a131">1</a> , <a id="a111">2</a>4<a id="a122">4</a><a id="a111">5</a> = 8<a id="a113">7</a>0</p>
+<p>5<a id="a144">1</a><a id="a134">7</a> , <a id="a113">9</a><a id="a132">9</a>6<a id="a111">4</a> = <a id="a123">2</a><a id="a143">1</a>?</p>
+<p>Answer ： <input type="text" id="ans1" style="width:100px; height:25px; border:2px"></p>
+<br><br><br><br>
+<p>
+<button id="btn211"></button>
+<button id="btn212"></button>
+<button id="btn213"></button>
+<button id="btn214"></button>
+<button id="btn215"></button>
+<button id="btn216"></button>
+</p><p>
+<button id="btn221"></button>
+<button id="btn222"></button>
+<button id="btn223"></button>
+<button id="btn224"></button>
+<button id="btn225"></button>
+<button id="btn226"></button>
+</p><p>
+<button id="btn231"></button>
+<button id="btn232"></button>
+<button id="btn233"></button>
+<button id="btn234"></button>
+<button id="btn235"></button>
+<button id="btn236"></button>
+</p><p>
+<button id="btn241"></button>
+<button id="btn242"></button>
+<button id="btn243"></button>
+<button id="btn244"></button>
+<button id="btn245"></button>
+<button id="btn246"></button>
+</p><p>
+<button id="btn251"></button>
+<button id="btn252"></button>
+<button id="btn253"></button>
+<button id="btn254"></button>
+<button id="btn255"></button>
+<button id="btn256"></button>
+</p>
+<br>
+<p><a id="a256">2</a><a id="a234">3</a><a id="a224">0</a><a id="a211">1</a><a id="a222">2</a><a id="a255">1</a><a id="a241">2</a><a id="a224">8</a><a id="a252">8</a><a id="a215">6</a><a id="a212">5</a>?<a id="a231">1</a><a id="a225">2</a><a id="a235">4</a><a id="a222">2</a><a id="a244">2</a><a id="a251">2</a><a id="a254">7</a><a id="a226">5</a> , <a id="a216">6</a>1<a id="a211">9</a><a id="a232">8</a>6<a id="a252">2</a><a id="a214">4</a><a id="a245">2</a><a id="a223">2</a><a id="a214">0</a> , <a id="a253">1</a><a id="a226">2</a>0<a id="a242">5</a>6<a id="a213">7</a> , <a id="a241">7</a><a id="a216">2</a><a id="a254">3</a><a id="a212">2</a><a id="a224">3</a><a id="a235">1</a><a id="a213">0</a>6<a id="a231">4</a><a id="a225">7</a><a id="a221">5</a><a id="a256">6</a><a id="a242">4</a><a id="a234">2</a>8<a id="a222">2</a><a id="a245">7</a><a id="a232">6</a><a id="a213">2</a><a id="a253">2</a><a id="a211">9</a><a id="a226">2</a> , <a id="a255">0</a><a id="a241">0</a><a id="a223">9</a><a id="a251">8</a><a id="a254">6</a><a id="a211">3</a>8<a id="a225">1</a>8<a id="a221">5</a><a id="a215">3</a><a id="a244">3</a></p>
+<p>Answer ： <input type="text" id="ans2" style="width:100px; height:25px; border:2px"></p>
+<br><br><br><br>
+<p>
+<button id="btn311"></button>
+<button id="btn312"></button>
+<button id="btn313"></button>
+<button id="btn314"></button>
+<button id="btn315"></button>
+<button id="btn316"></button>
+<button id="btn317"></button>
+<button id="btn318"></button>
+<button id="btn319"></button>
+</p><p>
+<button id="btn321"></button>
+<button id="btn322"></button>
+<button id="btn323"></button>
+<button id="btn324"></button>
+<button id="btn325"></button>
+<button id="btn326"></button>
+<button id="btn327"></button>
+<button id="btn328"></button>
+<button id="btn329"></button>
+</p><p>
+<button id="btn331"></button>
+<button id="btn332"></button>
+<button id="btn333"></button>
+<button id="btn334"></button>
+<button id="btn335"></button>
+<button id="btn336"></button>
+<button id="btn337"></button>
+<button id="btn338"></button>
+<button id="btn339"></button>
+</p><p>
+<button id="btn341"></button>
+<button id="btn342"></button>
+<button id="btn343"></button>
+<button id="btn344"></button>
+<button id="btn345"></button>
+<button id="btn346"></button>
+<button id="btn347"></button>
+<button id="btn348"></button>
+<button id="btn349"></button>
+</p><p>
+<button id="btn351"></button>
+<button id="btn352"></button>
+<button id="btn353"></button>
+<button id="btn354"></button>
+<button id="btn355"></button>
+<button id="btn356"></button>
+<button id="btn357"></button>
+<button id="btn358"></button>
+<button id="btn359"></button>
+</p><p>
+<button id="btn361"></button>
+<button id="btn362"></button>
+<button id="btn363"></button>
+<button id="btn364"></button>
+<button id="btn365"></button>
+<button id="btn366"></button>
+<button id="btn367"></button>
+<button id="btn368"></button>
+<button id="btn369"></button>
+</p><p>
+<button id="btn371"></button>
+<button id="btn372"></button>
+<button id="btn373"></button>
+<button id="btn374"></button>
+<button id="btn375"></button>
+<button id="btn376"></button>
+<button id="btn377"></button>
+<button id="btn378"></button>
+<button id="btn379"></button>
+</p>
+<br>
+<p><a id="a328">1</a><a id="a324">9</a><a id="a365">8</a><a id="a317">3</a><a id="a335">4</a>2<a id="a338">7</a><a id="a315">5</a><a id="a319">9</a><a id="a377">6</a><a id="a364">1</a><a id="a369">2</a> , <a id="a329">3</a>1<a id="a337">7</a><a id="a364">4</a><a id="a342">2</a><a id="a327">8</a><a id="a373">2</a><a id="a345">1</a>1<a id="a356">1</a><a id="a362">3</a><a id="a361">2</a><a id="a341">7</a><a id="a312">8</a><a id="a332">4</a>4<a id="a369">8</a> , <a id="a356">1</a><a id="a372">9</a>7<a id="a342">8</a></p>
+<p><a id="a353">3</a><a id="a367">2</a>3<a id="a346">5</a><a id="a331">2</a><a id="a379">7</a><a id="a316">3</a><a id="a318">8</a><a id="a321">4</a><a id="a378">2</a><a id="a357">6</a><a id="a337">1</a><a id="a342">2</a> , <a id="a327">8</a><a id="a373">2</a>1<a id="a368">9</a>2<a id="a367">8</a><a id="a357">8</a><a id="a345">1</a><a id="a345">0</a><a id="a361">8</a><a id="a334">3</a>4<a id="a317">6</a><a id="a313">5</a><a id="a348">1</a><a id="a378">9</a> , <a id="a315">9</a>8<a id="a326">1</a><a id="a336">3</a></p>
+<p>1<a id="a377">5</a><a id="a366">9</a><a id="a352">9</a><a id="a333">6</a><a id="a326">4</a>0<a id="a351">0</a> , <a id="a323">0</a><a id="a329">3</a><a id="a337">7</a><a id="a364">4</a>5<a id="a342">2</a><a id="a373">2</a><a id="a345">1</a><a id="a356">1</a>3<a id="a378">5</a>0<a id="a319">2</a><a id="a311">7</a><a id="a355">6</a><a id="a362">1</a><a id="a358">0</a><a id="a313">0</a> , <a id="a365">3</a><a id="a334">6</a><a id="a374">3</a><a id="a324">4</a>1<a id="a328">8</a>5<a id="a343">0</a><a id="a315">5</a><a id="a323">5</a></p>
+<p><a id="a374">1</a>1<a id="a359">1</a><a id="a352">4</a><a id="a349">4</a><a id="a379">2</a>2<a id="a338">3</a><a id="a341">5</a><a id="a335">8</a> , <a id="a339">7</a>4<a id="a376">1</a><a id="a348">9</a>4<a id="a368">9</a><a id="a367">8</a><a id="a357">8</a><a id="a344">6</a><a id="a329">4</a><a id="a354">2</a><a id="a312">5</a>8<a id="a373">1</a><a id="a321">8</a><a id="a316">0</a><a id="a351">9</a><a id="a359">7</a><a id="a343">1</a><a id="a318">4</a> , <a id="a363">4</a><a id="a331">4</a>1<a id="a314">3</a>6<a id="a312">2</a></p>
+<p><a id="a327">2</a><a id="a314">5</a><a id="a344">8</a><a id="a336">0</a><a id="a354">2</a><a id="a366">3</a><a id="a346">1</a><a id="a368">8</a>2<a id="a326">9</a><a id="a361">1</a><a id="a328">5</a>2<a id="a376">7</a><a id="a372">5</a><a id="a358">3</a> , <a id="a332">1</a><a id="a363">6</a><a id="a324">6</a><a id="a355">5</a>?<a id="a349">0</a> , <a id="a333">4</a><a id="a339">4</a><a id="a378">9</a><a id="a315">9</a><a id="a326">1</a>3<a id="a379">3</a><a id="a318">1</a>1<a id="a316">8</a><a id="a311">7</a></p>
+<p>Answer ： <input type="text" id="ans3" style="width:100px; height:25px; border:2px"></p>
+<br><br>
+<button type="button" onclick="grade()" style="width:100px; height:30px; background: transparent; border:4px #5500DD double;">交卷</button>
+<br><br><br>
+</div>
+
+</body>
+</html>
